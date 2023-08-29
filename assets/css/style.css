@@ -277,7 +277,6 @@ h3{
 	    .row {
         flex-direction: column; /* Stack columns on smaller screens */
     }    
-}
 	/* Adjust font sizes for smaller screens */
 #hero h1 {
         font-size: 30px; /* Adjust the font size for smaller screens */
@@ -297,7 +296,7 @@ h3{
         line-height: 20px; /* Adjust the line height for spans */
         letter-spacing: 1.5px; /* Adjust the letter spacing for spans */
     }
-
+}
 /*-------------svg shape----------------------------------------*/
 .custom-shape-divider-bottom-1686657405 {
     position: absolute;
