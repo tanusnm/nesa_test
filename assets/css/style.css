@@ -289,7 +289,8 @@ h3{
 #hero .btn {
         font-size: 12px;
     }
-#hero h1 span,
+#hero h1 span{
+}
 
 #hero h3 span {
 		font-size: 90% !important; /* Adjust the font size for spans */
