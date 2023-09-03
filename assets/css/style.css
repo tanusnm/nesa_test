@@ -48,6 +48,38 @@ h3{
   color: #104C63;
   text-align: left;
 }
+/* Define the styling for the .hr-lines class */
+.hr-lines {
+    position: relative;
+    font-size: 24px;
+    color: blue;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Create a blue line on the left */
+.hr-lines::before,
+.hr-lines::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 4px; /* Increase the line width */
+    height: 100%; /* Remove padding between lines and title */
+    background-color: blue;
+}
+
+/* Position the left line */
+.hr-lines::before {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* Position the right line */
+.hr-lines::after {
+    right: 0;
+    transform: translateY(-50%);
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -268,11 +300,10 @@ h3{
     height: auto;
 }
 #hero .hero-img {
-		height:250px;
-		width: 250px;
+		height:300px;
+		width: 300px;
         margin-top: 100px; /* Add some space between image and text */
 		background-position: center;
-		margin-left:55px;
     }
 	    .row {
         flex-direction: column; /* Stack columns on smaller screens */
@@ -417,6 +448,12 @@ section {
   .about h2 {
     font-size: 24px; 
   }
+  .about .about-img {
+		height:300px;
+		width: 300px;
+		background-position: center;
+
+    }
 }
 
 /*--------------------------------------------------------------
